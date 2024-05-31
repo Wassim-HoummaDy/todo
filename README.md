@@ -8,8 +8,8 @@ The script allow to:
 - List tasks of a given day in two output sections: You will be prompted to enter the date it give you all task of this day with their states: completed or uncompleted.
 - Search for a task by title:You will be prompted to enter the title.
 # Design Choices
--By default: the code list completed and uncompleted tasks of the current day.
+-By default: when you first enter, the code will list completed and uncompleted tasks of the current day.
 - **Data Storage**: The tasks are stored in a text file (`todo_tasks.txt`). Each task is represented as a line in a format in this order: 'ID|Title|Description|Location|Due Date|Completed'.
 - **Code functions**: The script is organized into functions that handle loading, saving, creating, updating, deleting, and displaying tasks. The `main` function handles command-line arguments and invokes the appropriate function.
-- **Error Handling**: The script checks for the existence of tasks and handles invalid task IDs by printing error messages to standard error if they do not exist.
+- **Error Handling**: The script checks for the existence of tasks and handles invalid task IDs by printing error messages to standard error if a command or task do not exist.
 
